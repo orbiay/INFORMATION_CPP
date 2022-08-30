@@ -1,0 +1,49 @@
+******************************************REFERENCE*********************************************
+
+\\alternative == بديل : existin == موجود\\
+
+**When a variable is declared as a reference, it becomes an alternative name for an existing variable.**
+**A variable can be declared as a reference by putting ‘&’ in the declaration.**
+**If a function receives a reference to a variable, it can modify the value of the variable.**
+
+EXAMPLE:
+							\\references.cpp\\
+#include <stdio.h>
+struct S {
+   short i;
+};
+
+int main() {
+   S  s;   // Declare the object.
+   S& SRef = s;   // Declare the reference.
+   s.i = 3;
+
+   printf_s("%d\n", s.i);
+   printf_s("%d\n", SRef.i);
+
+   SRef.i = 4;
+   printf_s("%d\n", s.i);
+   printf_s("%d\n", SRef.i);
+}
+For print value of the REFERENCE = std :: cout << REF_name << std :: endl;
+for print Address of the REFERENCE = std :: cout << &REF_name << std :: endl;
+
+
+***************************************POINTER*************************************************
+
+**A pointer however, is a variable that stores the memory address as its value.**
+**A pointer variable points to a data type (like int or string) of the same type, and is created with the * operator.**
+**The address of the variable you're working with is assigned to the pointer**
+
+For print value of the POINTER = std :: cout << *POINTER_name << std :: endl;
+For print Address  POINTER to value = std :: cout << *POINTER_name << std :: endl;
+For print address of the POINTER =  std :: cout << &POINTER_name << std :: endl;
+
+**********************************The Difference Between POINTER AND REFERENCE*************************
+
+**Pointer in C++ : is a variable that holds the memory address of another variable.**
+
+**Reference : is an alias for an already existing variable. Once a reference is initialized to a variable,**
+**it cannot be changed to refer to another variable. Hence, a reference is similar to a const pointer.**
+
+For more information : https://www.educative.io/answers/differences-between-pointers-and-references-in-cpp

@@ -1,0 +1,13 @@
+********************************STACK**************************************************
+
+**Everytime a function is called, the machine allocates some stack memory for it.**
+ **When a new local variables is declared,**
+  **more stack memory is allocated for that function to store the variable.**
+ **After the function returns, the stack memory of this function is deallocated, which means all local variables become invalid.**
+ **The allocation and deallocation for stack memory is automatically done.**
+
+*****************************HEAP******************************************************
+
+ **heap memory is allocated explicitly by programmers and it won’t be deallocated until it is explicitly freed.**
+ **To allocate heap memory in C++, use the keyword new followed by the constructor of what you want to allocate.**
+   **The return value of new operator will be the address of what you just created (which points to somewhere in the heap).**

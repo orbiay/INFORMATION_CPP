@@ -1,0 +1,5 @@
+*************************************DELETE*********************************
+
+**It should only be used either for the pointers pointing to the memory allocated using the new operator or for a NULL pointer.**
+
+**For delete some variables whith operator DELETE(), the variables must won't be allocated whith malloc() or just declared in stack**

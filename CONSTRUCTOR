@@ -1,0 +1,38 @@
+***************************************************Constructors********************************************
+
+**A constructor in C++ is a special method that is automatically called when an object of a class is created.**
+**It is always public, and it does not have any return value.**
+**To create a constructor, use the same name as the class, followed by parentheses ()**
+
+EXAMPLE : 
+		class MyClass {     // The class
+		  public:           // Access specifier
+		    MyClass() {     // Constructor
+		      cout << "Hello World!";
+		    }
+		}
+
+		int main() {
+		  MyClass myObj;    // Create an object of MyClass (this will call the constructor)
+		  return 0;
+		}
+
+***********************************************Types of Constructors :**************************************************
+
+1. **Default Constructors: Default constructor is the constructor which doesn’t take any argument. It has no parameters. It is also called a zero-argument constructor.**
+**Note: Even if we do not define any constructor explicitly, the compiler will automatically provide a default constructor implicitly.**
+
+2. **Parameterized Constructors: It is possible to pass arguments to constructors. Typically, these arguments help initialize an object when it is created.**
+ **To create a parameterized constructor, simply add parameters to it the way you would to any other function. When you define the constructor’s body, use the parameters to initialize the object.**
+
+3. **A copy constructor is a member function that initializes an object using another object of the same class. A detailed article on Copy Constructor.**
+
+Whenever we define one or more non-default constructors( with parameters ) for a class, a default constructor( without parameters ) should also be explicitly defined as the compiler will not provide a default constructor in this case.**
+ **However, it is not necessary but it’s considered to be the best practice to always define a default constructor.**
+
+**Copy constructor takes a reference to an object of the same class as an argument.**
+
+4. Assignment operator : is a member function that initializes an object using another object of the same class
+,This operator is called when an already initialized object is assigned a new value from another existing object. 
+
+For more Inforamation : https://www.geeksforgeeks.org/copy-constructor-vs-assignment-operator-in-c/ .
